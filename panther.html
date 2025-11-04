@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Panther9751 Team — Projects Showcase</title>
+  <meta name="theme-color" content="#0b6efd">
+ <style>
+    :root{
+      --blue:#0b6efd;
+      --blue-dark:#0753c9;
+      --white:#ffffff;
+      --bg:#f6f9ff;
+      --radius:12px;
+      --max-w:1100px;
+      --gap:18px;
+      font-family: 'Segoe UI', Tahoma, system-ui, Arial, sans-serif;
+    }
+    *{box-sizing:border-box}
+    body{margin:0;background:var(--bg);color:#0b2340;line-height:1.5}
+    .container{max-width:var(--max-w);margin:28px auto;padding:0 18px}
+
+    header{
+      background:linear-gradient(90deg,var(--white),#eef5ff);
+      border-radius:16px;
+      padding:18px;
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+      gap:12px
+    }
+    .brand{display:flex;align-items:center;gap:12px}
+    .logo{width:64px;height:64px;border-radius:12px;background:var(--blue);
+      display:grid;place-items:center;color:var(--white);font-weight:700;font-size:22px}
+    nav a{margin-left:14px;text-decoration:none;color:var(--blue);font-weight:600}
+
+    .hero{display:grid;grid-template-columns:1fr 380px;gap:18px;margin-top:18px;align-items:center}
+    .card{background:var(--white);border-radius:var(--radius);padding:20px;
+      box-shadow:0 6px 20px rgba(11,110,253,0.08)}
+    .hero h1{margin:0 0 8px 0;color:var(--blue-dark)}
+    .cta{display:inline-block;margin-top:12px;padding:10px 16px;border-radius:10px;
+      background:var(--blue);color:var(--white);text-decoration:none}
+
+    .about{margin-top:18px;display:grid;grid-template-columns:1fr 320px;gap:18px}
+
+    .projects{margin-top:18px}
+    .grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:var(--gap)}
+    .proj{overflow:hidden;border-radius:12px;background:linear-gradient(180deg,#fff,#f8fbff);
+      border:1px solid #e6f0ff}
+    .proj img{width:100%;height:170px;object-fit:cover;display:block}
+    .proj .pbody{padding:12px}
+    .proj h3{margin:0 0 6px 0;font-size:16px;color:var(--blue-dark)}
+    .proj p{margin:0;font-size:14px;color:#26425a}
+
+    .lightbox{position:fixed;inset:0;background:rgba(3,10,30,0.7);display:none;
+      align-items:center;justify-content:center;padding:20px}
+    .lightbox img{max-width:90%;max-height:80%;border-radius:10px}
+
+    footer{margin-top:22px;text-align:center;color:#3b5b80}
+
+    @media(max-width:900px){
+      .hero{grid-template-columns:1fr}
+      .about{grid-template-columns:1fr}
+      nav a{display:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="logo">RB</div>
+        <div>
+          <div style="font-weight:700"><h1>Panther team 9751</h1></div>
+          <small style="color:#4b6b95">We Create, Build & Compete</small>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#gallery">Gallery</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <section class="hero">
+      <div class="card">
+        <h1>Welcome to Our Robotics Showcase</h1>
+        <p>Engineering projects, competitions, and workshops — discover our latest creations and meet the team behind them.</p>
+        <a class="cta" href="#projects">See Our Work</a>
+      </div>
+      <aside class="card">
+        <h3>Contact Info</h3>
+        <p>Email: robotics@example.com<br>Phone: +1 313 333 0761<br>MS.Jeson Bodson
+        <p><strong>Location:</strong> Our School — OAKLAND INTERNATIONAL ACADEMY</p>
+      </aside>
+    </section>
+
+    <section id="about" class="about">
+      <div class="card">
+        <h2>About the Team</h2>
+        <p>We are a group of students passionate about engineering and programming. Our work includes building competitive and functional robots — from mechanical design to software and sensors.</p>
+        <ul>
+          <li>Skills: Mechatronics, Programming, Electrical</li>
+          <li>Experience: Regional competitions, school showcases</li>
+          <li>Goal: Hands-on learning and real-world prototypes</li>
+        </ul>
+      </div>
+      <div class="card">
+        <h3>Season Goals</h3>
+        <ol>
+          <li>Build a racing robot for Team A</li>
+          <li>Host workshops for new students</li>
+          <li>Share open-source project documentation</li>
+        </ol>
+      </div>
+    </section>
+
+    <section id="projects" class="projects">
+      <h2>Our Projects</h2>
+      <div class="grid">
+        <article class="proj">
+          <img src="images/IMG-20251015-WA0035.jpg" alt="Project 1" data-full="https://via.placeholder.com/1600x1200?text=Project+1">
+          <div class="pbody">
+            <h3>Racing Robot</h3>
+            <p>Lightweight structure and high-speed performance for track races.</p>
+          </div>
+        </article>
+        <article class="proj">
+          <img src="images/IMG-20251015-WA0030.jpg" alt="Project 2" data-full="https://via.placeholder.com/1600x1200?text=Project+2">
+          <div class="pbody">
+            <h3>Robotic Arm</h3>
+            <p>Capable of precise object picking and movement.</p>
+          </div>
+        </article>
+        <article class="proj">
+          <img src="images/WhatsApp Image 2025-11-03 at 20.31.42_13c42938.jpg" alt="Project 3" data-full="">
+          <div class="pbody">
+            <h3>Explorer Bot</h3>
+            <p>Sensor-based navigation for obstacle detection and mapping.</p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="gallery" style="margin-top:18px">
+      <h2>Gallery</h2>
+      <div class="grid">
+        <div class="proj"><img src="images/IMG-20251015-WA0033.jpg" alt="Team Photo" data-full="https://via.placeholder.com/1600x1200?text=Team+1">
+        <h3>boss . Jeson Bodson</p>
+        </div>
+        <div class="proj"><img src="images/IMG-20251015-WA0012.jpg" alt="Team Photo" data-full="https://via.placeholder.com/1600x1200?text=Team+1"></div>
+        <div class="proj"><img src="images/IMG-20251015-WA0029.jpg" alt="Team Photo" data-full="https://via.placeholder.com/1600x1200?text=Team+1"></div>
+        <div class="proj"><img src="images/IMG-20251015-WA0011.jpg" alt="Lab" data-full="https://via.placeholder.com/1600x1200?text=Lab"></div>
+        <div class="proj"><img src="images/IMG-20251015-WA0032.jpg" alt="lab" date-full="https://via.placeholder.com/1600x1200?text=Team+1"></div>
+            
+            ">
+    </section>
+
+    <section id="contact" style="margin-top:18px">
+      <div class="card">
+        <h2>Contact Us</h2>
+        <form onsubmit="event.preventDefault();alert('Thank you! We’ll get back to you soon.');">
+          <label>Name<br><input required style="width:100%;padding:8px;border-radius:8px;border:1px solid #dfeeff"></label><br><br>
+          <label>Email<br><input required type="email" style="width:100%;padding:8px;border-radius:8px;border:1px solid #dfeeff"></label><br><br>
+          <label>Message<br><textarea required style="width:100%;padding:8px;border-radius:8px;border:1px solid #dfeeff" rows="4"></textarea></label><br><br>
+          <button style="background:var(--blue);color:var(--white);padding:10px 14px;border-radius:10px;border:none;">Send</button>
+        </form>
+      </div>
+    </section>
+
+    <footer>
+      <p>© Robotics Team — All Rights Reserved</p>
+    </footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" onclick="closeLb(event)">
+    <img id="lbimg" src="" alt="">
+  </div>
+
+  <script>
+    // Simple lightbox effect
+    document.querySelectorAll('img[data-full]').forEach(img => {
+      img.style.cursor='zoom-in';
+      img.addEventListener('click', ()=>{
+        const lb = document.getElementById('lightbox');
+        const lbimg = document.getElementById('lbimg');
+        lbimg.src = img.dataset.full || img.src;
+        lb.style.display = 'flex';
+      })
+    });
+    function closeLb(e){
+      if(e.target.id === 'lightbox' || e.target.id === 'lbimg'){
+        document.getElementById('lightbox').style.display='none';
+        document.getElementById('lbimg').src='';
+      }
+    }
+  </script>
+</body>
+</html>
